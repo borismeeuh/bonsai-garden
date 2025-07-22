@@ -4,21 +4,34 @@ import Hero from "./components/Hero.vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { onMounted } from "vue";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollSmoother.create({
-  smooth: 1,
-  effects: true,
-  smoothTouch: 0.1,
+onMounted(() => {
+  if (
+    document.querySelector("#smooth-wrapper") &&
+    document.querySelector("#smooth-content")
+  ) {
+    ScrollSmoother.create({
+      content: "#smooth-content",
+      effects: true,
+      smooth: 1.2,
+      smoothTouch: 0.1,
+      wrapper: "#smooth-wrapper",
+    });
+  } else {
+    console.warn(
+      "Smooth wrapper or content element not found, ScrollSmoother not initialized."
+    );
+  }
 });
 </script>
 
 <template>
   <div id="smooth-wrapper">
-    <div id="smooth-content">
+    <div id="smooth-content" class="relative">
       <Backdrop />
     </div>
   </div>
-  <Hero />
 </template>
