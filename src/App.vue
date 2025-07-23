@@ -1,3 +1,14 @@
+<template>
+  <div id="app">
+    <div id="smooth-wrapper">
+      <div id="smooth-content" class="relative">
+        <Backdrop />
+        <Hero />
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup lang="ts">
 import Backdrop from "./components/Backdrop.vue";
 import Hero from "./components/Hero.vue";
@@ -25,13 +36,20 @@ onMounted(() => {
       "Smooth wrapper or content element not found, ScrollSmoother not initialized."
     );
   }
+
+  gsap.fromTo(
+    "#images-container",
+    { filter: "blur(16px)" },
+    {
+      filter: "blur(0px)",
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#blurred-images-container",
+        start: "top bottom",
+        end: "75% top",
+        scrub: true,
+      },
+    }
+  );
 });
 </script>
-
-<template>
-  <div id="smooth-wrapper">
-    <div id="smooth-content" class="relative">
-      <Backdrop />
-    </div>
-  </div>
-</template>
