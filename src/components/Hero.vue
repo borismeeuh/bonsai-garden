@@ -25,13 +25,10 @@ import { onMounted, ref } from "vue";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// 1. Register the ScrambleTextPlugin
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-// 2. Create a template ref to target the element
 const scrambledParagraph = ref(null);
 
-// 3. Create the animation inside onMounted
 onMounted(() => {
   const mySplitText = new SplitText(scrambledParagraph.value, {
     type: "words",
