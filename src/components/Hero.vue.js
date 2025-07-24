@@ -15,11 +15,8 @@ var gsap_1 = require("gsap");
 var vue_1 = require("vue");
 var SplitText_1 = require("gsap/SplitText");
 var ScrollTrigger_1 = require("gsap/ScrollTrigger");
-// 1. Register the ScrambleTextPlugin
 gsap_1.gsap.registerPlugin(ScrollTrigger_1.ScrollTrigger, SplitText_1.SplitText);
-// 2. Create a template ref to target the element
 var scrambledParagraph = (0, vue_1.ref)(null);
-// 3. Create the animation inside onMounted
 (0, vue_1.onMounted)(function () {
     var mySplitText = new SplitText_1.SplitText(scrambledParagraph.value, {
         type: "words",
