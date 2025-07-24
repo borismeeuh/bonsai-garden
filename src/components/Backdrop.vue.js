@@ -31,8 +31,8 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "w-1/3" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-5.png", alt: "Bonsai 1" }, { class: "w-full h-full object-cover shadow-lg" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "w-2/3" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-5.png", alt: "Bonsai 2" }, { class: "w-full h-full object-cover shadow-lg" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "absolute top-50 w-1/1 text-sand flex flex-col items-center justify-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-11.png", alt: "Bonsai 2" }, { class: "w-full h-full object-cover shadow-lg" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "absolute top-70 w-1/1 text-sand flex flex-col items-center justify-center" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "text-8xl font-display font-extralight" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "text-2xl font-display font-extralight" }));
 /** @type {__VLS_StyleScopedClasses['min-h-screen']} */ ;
@@ -81,7 +81,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 /** @type {__VLS_StyleScopedClasses['object-cover']} */ ;
 /** @type {__VLS_StyleScopedClasses['shadow-lg']} */ ;
 /** @type {__VLS_StyleScopedClasses['absolute']} */ ;
-/** @type {__VLS_StyleScopedClasses['top-50']} */ ;
+/** @type {__VLS_StyleScopedClasses['top-70']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-1/1']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-sand']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;

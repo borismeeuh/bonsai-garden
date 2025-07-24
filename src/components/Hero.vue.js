@@ -37,13 +37,14 @@ debugger; /* PartiallyEnd: #3632/scriptSetup.vue */
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "relative py-48" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "relative pt-80 pb-24" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "top-50 w-full text-sand flex flex-col items-center justify-center" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "text-8xl font-display font-extralight" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "text-2xl font-display font-extralight w-1/2" }, { ref: "scrambledParagraph" }));
 /** @type {typeof __VLS_ctx.scrambledParagraph} */ ;
 /** @type {__VLS_StyleScopedClasses['relative']} */ ;
-/** @type {__VLS_StyleScopedClasses['py-48']} */ ;
+/** @type {__VLS_StyleScopedClasses['pt-80']} */ ;
+/** @type {__VLS_StyleScopedClasses['pb-24']} */ ;
 /** @type {__VLS_StyleScopedClasses['top-50']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-sand']} */ ;
