@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-48">
+  <section class="relative pt-80 pb-24">
     <div
       class="top-50 w-full text-sand flex flex-col items-center justify-center"
     >

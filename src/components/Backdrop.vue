@@ -50,7 +50,7 @@
         </div>
         <div class="w-2/3">
           <img
-            src="/src/images/bonsai-5.png"
+            src="/src/images/bonsai-11.png"
             alt="Bonsai 2"
             class="w-full h-full object-cover shadow-lg"
           />
@@ -58,7 +58,7 @@
       </div>
     </div>
     <div
-      class="absolute top-50 w-1/1 text-sand flex flex-col items-center justify-center"
+      class="absolute top-70 w-1/1 text-sand flex flex-col items-center justify-center"
     >
       <div class="text-8xl font-display font-extralight">Bonsai Garden</div>
       <div class="text-2xl font-display font-extralight">

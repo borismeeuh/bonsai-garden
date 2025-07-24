@@ -4,6 +4,7 @@
       <div id="smooth-content" class="relative">
         <Backdrop />
         <Hero />
+        <Slider />
       </div>
     </div>
   </div>
@@ -12,6 +13,8 @@
 <script setup lang="ts">
 import Backdrop from "./components/Backdrop.vue";
 import Hero from "./components/Hero.vue";
+import Slider from "./components/Slider.vue";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -46,7 +49,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: "#blurred-images-container",
         start: "top bottom",
-        end: "75% top",
+        end: "50% top",
         scrub: true,
       },
     }
