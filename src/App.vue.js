@@ -49,7 +49,7 @@ gsap_1.gsap.registerPlugin(ScrollTrigger_1.ScrollTrigger, ScrollSmoother_1.Scrol
         scrollTrigger: {
             trigger: "#blurred-images-container",
             start: "top bottom",
-            end: "40% top",
+            end: "20% top",
             scrub: true,
         },
     });
