@@ -5,6 +5,7 @@
         <Backdrop />
         <Hero />
         <Slider />
+        <RotationalSlider />
       </div>
     </div>
   </div>
@@ -12,6 +13,7 @@
 
 <script setup lang="ts">
 import Backdrop from "./components/Backdrop.vue";
+import RotationalSlider from "./components/RotationalSlider.vue";
 import Hero from "./components/Hero.vue";
 import Slider from "./components/Slider.vue";
 
@@ -49,7 +51,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: "#blurred-images-container",
         start: "top bottom",
-        end: "50% top",
+        end: "40% top",
         scrub: true,
       },
     }

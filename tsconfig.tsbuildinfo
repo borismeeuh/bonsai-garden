@@ -1,1 +1,1 @@
-{"root":["./src/main.ts","./src/shims-vue.d.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/backdrop.vue","./src/components/hero.vue","./src/components/slider.vue"],"version":"5.8.3"}
+{"root":["./src/main.ts","./src/shims-vue.d.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/backdrop.vue","./src/components/hero.vue","./src/components/rotationalslider.vue","./src/components/slider.vue"],"version":"5.8.3"}

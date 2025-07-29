@@ -27,7 +27,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const scrambledParagraph = ref(null);
+const scrambledParagraph = ref<HTMLElement>(null);
 
 onMounted(() => {
   const mySplitText = new SplitText(scrambledParagraph.value, {

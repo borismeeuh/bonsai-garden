@@ -2,14 +2,14 @@
   <section>
     <div
       ref="horizontalWrapper"
-      class="horizontal-scroll-wrapper h-screen overflow-hidden relative"
+      class="horizontal-scroll-wrapper overflow-hidden relative"
     >
       <div
         ref="horizontalSection"
         class="horizontal-scroll-section flex flex-nowrap w-max"
       >
         <div
-          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center"
+          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16"
         >
           <img
             src="/src/images/bonsai-9.png"
@@ -18,7 +18,7 @@
           />
         </div>
         <div
-          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center"
+          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16"
         >
           <img
             src="/src/images/bonsai-6.png"
@@ -27,7 +27,7 @@
           />
         </div>
         <div
-          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center"
+          class="horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16"
         >
           <img
             src="/src/images/bonsai-10.png"
@@ -56,23 +56,17 @@ onMounted(() => {
     return;
   }
 
-  // Calculate the total horizontal distance needed to scroll
-  // This is the total width of all panels minus the width of the viewport
-  // The 'horizontalSection.value.scrollWidth' gives the total scrollable width of the flex container
   let scrollWidth = horizontalSection.value.scrollWidth - window.innerWidth;
 
   gsap.to(horizontalSection.value, {
-    x: -scrollWidth, // Animate the X position to move left by the calculated width
-    ease: "none", // Linear movement
+    x: -scrollWidth, 
+    ease: "none", 
     scrollTrigger: {
-      trigger: horizontalWrapper.value, // The element that defines the vertical scroll region to pin
-      start: "top top", // When the top of the wrapper hits the top of the viewport
-      // The 'end' defines the vertical scroll distance over which the animation plays.
-      // We make it equal to the horizontal scroll distance to ensure a 1:1 scroll.
+      trigger: horizontalWrapper.value, 
+      start: "top top", 
       end: () => `+=${scrollWidth}`,
-      pin: true, // Pin the wrapper in place while the horizontal scroll happens
-      scrub: 1, // Smoothly link animation progress to scroll progress (1 = slight delay)
-      // markers: true, // Uncomment for debugging scroll trigger points
+      pin: true, 
+      scrub: 1,
     },
   });
 });

@@ -21,6 +21,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var Backdrop_vue_1 = require("./components/Backdrop.vue");
+var RotationalSlider_vue_1 = require("./components/RotationalSlider.vue");
 var Hero_vue_1 = require("./components/Hero.vue");
 var Slider_vue_1 = require("./components/Slider.vue");
 var gsap_1 = require("gsap");
@@ -48,7 +49,7 @@ gsap_1.gsap.registerPlugin(ScrollTrigger_1.ScrollTrigger, ScrollSmoother_1.Scrol
         scrollTrigger: {
             trigger: "#blurred-images-container",
             start: "top bottom",
-            end: "50% top",
+            end: "40% top",
             scrub: true,
         },
     });
@@ -76,12 +77,17 @@ var __VLS_4 = __VLS_3.apply(void 0, __spreadArray([{}], __VLS_functionalComponen
 // @ts-ignore
 var __VLS_6 = __VLS_asFunctionalComponent(Slider_vue_1.default, new Slider_vue_1.default({}));
 var __VLS_7 = __VLS_6.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_6), false));
+/** @type {[typeof RotationalSlider, ]} */ ;
+// @ts-ignore
+var __VLS_9 = __VLS_asFunctionalComponent(RotationalSlider_vue_1.default, new RotationalSlider_vue_1.default({}));
+var __VLS_10 = __VLS_9.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_9), false));
 /** @type {__VLS_StyleScopedClasses['relative']} */ ;
 var __VLS_dollars;
 var __VLS_self = (await Promise.resolve().then(function () { return require('vue'); })).defineComponent({
     setup: function () {
         return {
             Backdrop: Backdrop_vue_1.default,
+            RotationalSlider: RotationalSlider_vue_1.default,
             Hero: Hero_vue_1.default,
             Slider: Slider_vue_1.default,
         };

@@ -22,22 +22,16 @@ var horizontalSection = (0, vue_1.ref)(null);
         console.warn("Horizontal scrolling elements not found.");
         return;
     }
-    // Calculate the total horizontal distance needed to scroll
-    // This is the total width of all panels minus the width of the viewport
-    // The 'horizontalSection.value.scrollWidth' gives the total scrollable width of the flex container
     var scrollWidth = horizontalSection.value.scrollWidth - window.innerWidth;
     gsap_1.gsap.to(horizontalSection.value, {
-        x: -scrollWidth, // Animate the X position to move left by the calculated width
-        ease: "none", // Linear movement
+        x: -scrollWidth,
+        ease: "none",
         scrollTrigger: {
-            trigger: horizontalWrapper.value, // The element that defines the vertical scroll region to pin
-            start: "top top", // When the top of the wrapper hits the top of the viewport
-            // The 'end' defines the vertical scroll distance over which the animation plays.
-            // We make it equal to the horizontal scroll distance to ensure a 1:1 scroll.
+            trigger: horizontalWrapper.value,
+            start: "top top",
             end: function () { return "+=".concat(scrollWidth); },
-            pin: true, // Pin the wrapper in place while the horizontal scroll happens
-            scrub: 1, // Smoothly link animation progress to scroll progress (1 = slight delay)
-            // markers: true, // Uncomment for debugging scroll trigger points
+            pin: true,
+            scrub: 1,
         },
     });
 });
@@ -46,18 +40,17 @@ var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)({});
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "horizontalWrapper" }, { class: "horizontal-scroll-wrapper h-screen overflow-hidden relative" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "horizontalWrapper" }, { class: "horizontal-scroll-wrapper overflow-hidden relative" }));
 /** @type {typeof __VLS_ctx.horizontalWrapper} */ ;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "horizontalSection" }, { class: "horizontal-scroll-section flex flex-nowrap w-max" }));
 /** @type {typeof __VLS_ctx.horizontalSection} */ ;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-9.png", alt: "Bonsai 1" }, { class: "w-full h-full object-cover shadow-lg" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-6.png", alt: "Bonsai 1" }, { class: "w-full h-full object-cover shadow-lg" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "horizontal-panel min-w-screen h-screen flex flex-shrink-0 justify-center items-center p-16" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/images/bonsai-10.png", alt: "Bonsai 1" }, { class: "w-full h-full object-cover shadow-lg" }));
 /** @type {__VLS_StyleScopedClasses['horizontal-scroll-wrapper']} */ ;
-/** @type {__VLS_StyleScopedClasses['h-screen']} */ ;
 /** @type {__VLS_StyleScopedClasses['overflow-hidden']} */ ;
 /** @type {__VLS_StyleScopedClasses['relative']} */ ;
 /** @type {__VLS_StyleScopedClasses['horizontal-scroll-section']} */ ;
@@ -71,6 +64,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/ima
 /** @type {__VLS_StyleScopedClasses['flex-shrink-0']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-16']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['object-cover']} */ ;
@@ -82,6 +76,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/ima
 /** @type {__VLS_StyleScopedClasses['flex-shrink-0']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-16']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['object-cover']} */ ;
@@ -93,6 +88,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign({ src: "/src/ima
 /** @type {__VLS_StyleScopedClasses['flex-shrink-0']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-16']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['object-cover']} */ ;
