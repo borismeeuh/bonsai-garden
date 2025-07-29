@@ -51,7 +51,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: "#blurred-images-container",
         start: "top bottom",
-        end: "40% top",
+        end: "20% top",
         scrub: true,
       },
     }
