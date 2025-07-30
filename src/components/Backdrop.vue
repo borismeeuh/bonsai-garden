@@ -49,11 +49,13 @@
           />
         </div>
         <div class="w-2/3">
-          <img
-            src="/src/images/bonsai-11.png"
-            alt="Bonsai 2"
-            class="w-full h-full object-cover shadow-lg"
-          />
+            <RouterLink to="/bonsai-detail">
+                <img
+                    src="/src/images/bonsai-11.png"
+                    alt="Bonsai 2"
+                    class="w-full h-full object-cover shadow-lg"
+                />
+            </RouterLink>
         </div>
       </div>
     </div>
