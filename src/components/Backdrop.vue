@@ -32,24 +32,28 @@
           />
         </div>
         <div class="w-1/3">
-          <img
-            src="/src/images/bonsai-4.png"
-            alt="Bonsai 4"
-            class="w-full h-full object-cover shadow-lg"
-          />
+        <RouterLink to="/bonsai-detail/canadian-maple">
+            <img
+                src="/src/images/bonsai-4.png"
+                alt="Bonsai 4"
+                class="w-full h-full object-cover shadow-lg"
+            />
+            </RouterLink>
         </div>
       </div>
 
       <div class="flex gap-12 h-1/2">
         <div class="w-1/3">
-          <img
-            src="/src/images/bonsai-5.png"
-            alt="Bonsai 1"
-            class="w-full h-full object-cover shadow-lg"
-          />
+            <RouterLink to="/bonsai-detail/japanese-larch">
+                <img
+                    src="/src/images/bonsai-5.png"
+                    alt="Bonsai 1"
+                    class="w-full h-full object-cover shadow-lg"
+                />
+            </RouterLink>
         </div>
         <div class="w-2/3">
-            <RouterLink to="/bonsai-detail">
+            <RouterLink to="/bonsai-detail/cherry-blossom">
                 <img
                     src="/src/images/bonsai-11.png"
                     alt="Bonsai 2"

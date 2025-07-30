@@ -9,8 +9,9 @@ const routes = [
 		component: Home,
 	},
 	{
-		path: "/bonsai-detail",
+		path: "/bonsai-detail/:id",
 		component: BonsaiDetail,
+        props: true,
 	},
 ];
 
